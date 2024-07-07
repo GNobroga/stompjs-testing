@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <title>Bate-Papo</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+    </head>
+    <body>
+        <div class="chat">
+            <div class="chat__display">
+                <template id="message-template">
+                        <div class="chat__display-message">
+                            <div class="chat__display-message-photo"></div>
+                            <span class="chat__display-message-content">
+                                <span class="chat__display-message-content-name">Gabriel</span>
+                                <p class="chat__display-message-content-text">Oiiiiii</p>
+                            </span>
+                        </div>
+                </template>
+            </div>
+            <div class="chat__submit">
+                <input type="text" class="chat__submit-input" placeholder="Escreva...">
+                <button class="chat__submit-button">Enviar</button>
+            </div>
+        </div>
+        <script type="importmap">
+            {
+              "imports": {
+                "@stomp/stompjs": "https://ga.jspm.io/npm:@stomp/stompjs@7.0.0/esm6/index.js"
+              }
+            }
+          </script>
+          <script type="module" src="./assets/js/script.js"></script>
+    </body>
+</html>
